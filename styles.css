@@ -15,8 +15,11 @@
 }
 
 body {
+    background: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
+    line-height: 1.5;
     text-align: center;
 }
 
@@ -24,37 +27,75 @@ h1, h2, h3 {
     color: var(--neutral-a);
 }
 
+p {
+    color: var(--neutral-b);
+    margin: .5em auto;
+}
+
+/* Header Section */
+
 .wrapper {
-    margin: 5em auto 3em;
+    margin: 7em auto;
 }
 
 .wrapper p {
-    color: var(--neutral-b);
-    margin: 1em auto;
-    font-size: 1rem;
-    line-height: 1.5;
-    width: 40%;
+    width: 45%;
 }
 
 .wrapper img {
-    margin: 2em;
+    margin-bottom: 2em;
 }
 
 .btn {
     border-radius: 40px;
     border: none;
     color: #fff;
-    margin: .5em;
+    margin: 2em .5em;
     padding: 1em 2em;
 }
 
 .btn-1 {
     background: var(--primary-a);
-    box-shadow: 10px 10px;
+    box-shadow: 0 3px hsl(171, 72%, 33%);
+    filter: drop-shadow(0 10px 8px hsl(171, 69%, 87%));
 }
 
 .btn-2 {
     background: var(--primary-b);
+    box-shadow: 0 3px hsl(233, 59%, 56%);
+    filter: drop-shadow(0 10px 8px hsl(233, 94%, 82%));
+}
+
+/* Showcase */
+
+.grid-container {
+    display: grid;
+    margin-bottom: 10em;
+    position: relative;
+}
+
+.computer {
+    position: absolute;
+    left: -50px;
+}
+
+.side-bar {
+    text-align: left;
+    justify-self: end;
+    width: 27%;
+    margin: 2em 15em;
+}
+
+.devices {
+    margin: 5em auto;
+    width: fit-content;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 2em;
+    margin: 0 5em;
 }
 
 .attribution {
