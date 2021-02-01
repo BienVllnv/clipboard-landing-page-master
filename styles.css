@@ -21,20 +21,23 @@ body {
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
+    margin: 0 10%;
 }
 
 h1, h2, h3 {
     color: var(--neutral-a);
-    line-height: 2;
+    font-weight: 600;
+    line-height: 2.5;
 }
 
 p {
     color: var(--neutral-b);
+    font-weight: 400;
 }
 
 .content {
     margin: 5em auto;
-    width: 45%;
+    padding: 0 20%;
 }
 
 .content img {
@@ -47,17 +50,41 @@ aside {
     align-items: flex-end;
     position: relative;
     text-align: left;
+    margin-bottom: 10em;
 }
 
 aside img {
     position: absolute;
-    left: -50px;
+    left: -200px;
     max-width: 750px;
 }
 
 .side-bar {
     margin: 2em;
-    width: 30%;
+    padding: 0 1.5em;
+    width: 40%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 2em;
+}
+
+.icons {
+    width: 50px;
+    height: 45px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+}
+
+.banner > * {
+    flex: 1 1 fit-content;
 }
 
 .btn {
@@ -65,7 +92,7 @@ aside img {
     border: none;
     color: #fff;
     margin: 2em .5em;
-    padding: 1em 2em;
+    padding: .8em 2em;
 }
 
 .btn-1 {
