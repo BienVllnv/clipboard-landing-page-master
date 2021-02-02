@@ -92,21 +92,39 @@ aside img {
     max-width: 70%;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    gap: 2em;
-    align-content: center;
-    max-width: fit-content;
+.devices {
+    position: relative;
+    max-width: 80%;
 }
 
-.grid-container .icons {
-    height: 30px;
-    margin-bottom: 1.5em;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 0 10%;
+}
+
+.flex-container .icons {
+    height: 40px;
+    margin-bottom: 2em;
 }
 
 .cards {
-    width: 80%;
+    flex: 1 1 200px;
+}
+
+.banner {
+    margin: 10%;
+}
+
+.banner-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+.banner-img li {
+    list-style: none;
 }
 
 .attribution {
