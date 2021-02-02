@@ -15,80 +15,35 @@
 }
 
 body {
-    background: url(./images/bg-header-desktop.png);
-    background-repeat: no-repeat;
+    background: url(./images/bg-header-desktop.png) no-repeat;
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
-    margin: 0 10%;
 }
 
 h1, h2, h3 {
     color: var(--neutral-a);
     font-weight: 600;
-    line-height: 2.5;
+    margin-bottom: 10px;
 }
 
 p {
     color: var(--neutral-b);
     font-weight: 400;
+    font-size: 14px;
+}
+
+/* Header Section */
+
+header .logo {
+    margin-bottom: 3em;
 }
 
 .content {
-    margin: 5em auto;
-    padding: 0 20%;
-}
-
-.content img {
-    margin: 2em;
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-    text-align: left;
-    margin-bottom: 10em;
-}
-
-aside img {
-    position: absolute;
-    left: -200px;
-    max-width: 750px;
-}
-
-.side-bar {
-    margin: 2em;
-    padding: 0 1.5em;
-    width: 40%;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2em;
-    margin: 2em 0;
-}
-
-.icons {
-    width: 50px;
-    height: 45px;
-}
-
-.banner {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5em;
-    margin: 10em 0;
-}
-
-.banner > * {
-    flex: 1 1 fit-content;
-    width: fit-content;
+    width: 600px;
+    max-width: 90%;
+    margin: 8% auto;
 }
 
 .btn {
@@ -111,35 +66,52 @@ aside img {
     filter: drop-shadow(0 10px 8px hsl(233, 94%, 82%));
 }
 
-footer {
-    background: var(--neutral-b);
+/* Computer-img Section */
+
+aside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+aside img {
+    position: absolute;
+    left: -50px;
+    width: 50%;
+}
+
+.side-bar {
+    text-align: left;
+    width: 50%;
+}
+
+.side-content {
+    margin: 3em;
+    width: 360px;
+    max-width: 70%;
+}
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 -15%;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 2em;
+    align-content: center;
+    max-width: fit-content;
 }
 
-.footer-1 a:hover {
-    color: var(--primary-a);
+.grid-container .icons {
+    height: 30px;
+    margin-bottom: 1.5em;
 }
 
-.footer-1, .social:hover {
-    color: var(--primary-a);
-}
-
-footer .logo {
-    width: 50px;
-}
-
-.footer-1 a {
-    color: var(--neutral-a);
-    text-decoration: none;
+.cards {
+    width: 80%;
 }
 
 .attribution {
-    background: var(--neutral-b);
     font-size: 11px; 
     text-align: center; 
-    margin: 0 -15%;
 }
 
 .attribution a { 
