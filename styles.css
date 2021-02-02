@@ -50,6 +50,7 @@ header .logo {
     border-radius: 40px;
     border: none;
     color: #fff;
+    cursor: pointer;
     margin: 2em .5em;
     padding: .8em 2em;
 }
@@ -125,6 +126,54 @@ aside img {
 
 .banner-img li {
     list-style: none;
+}
+
+/* Footer */
+
+footer {
+    background: var(--neutral-b);
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    padding: 3% 10%;
+}
+
+footer .footer-list {
+    display: grid;
+    grid-auto-columns: (3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    justify-items: start;
+    row-gap: 10px;
+    margin-left: 3em;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+}
+
+footer ul li .social:hover {
+    color: var(--neutral-a);
+}
+
+a:hover {
+    color: var(--primary-a);
+}
+
+footer .logo {
+    align-self: center;
+    width: 50px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--neutral-a);
 }
 
 .attribution {
