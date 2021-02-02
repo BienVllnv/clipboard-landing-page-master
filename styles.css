@@ -154,11 +154,7 @@ footer .social-media {
     gap: 1em;
 }
 
-footer ul li .social:hover {
-    color: var(--neutral-a);
-}
-
-a:hover {
+footer a:hover {
     color: var(--primary-a);
 }
 
