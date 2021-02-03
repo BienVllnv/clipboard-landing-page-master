@@ -172,6 +172,10 @@ footer a {
     color: var(--neutral-a);
 }
 
+.icons:hover {
+    color: var(--primary-a);
+}
+
 .attribution {
     font-size: 11px; 
     text-align: center; 
