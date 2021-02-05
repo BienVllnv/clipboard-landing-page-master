@@ -137,17 +137,16 @@ aside img {
 footer {
     background: var(--neutral-b);
     display: grid;
-    grid-template-columns: 100px 2fr 1fr;
+    grid-template-columns: 200px 2fr 1fr;
     padding: 3% 10%;
 }
 
 footer .footer-list {
     display: grid;
-    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
     grid-auto-flow: column;
-    justify-items: start;
     row-gap: 10px;
-    margin-left: 3em;
 }
 
 footer .social-media {
@@ -167,12 +166,14 @@ footer .logo {
 }
 
 footer li {
+    text-align: left;
     list-style: none;
 }
 
 footer a {
     text-decoration: none;
     color: var(--neutral-a);
+    transition: .3s;
 }
 
 .icons:hover {
@@ -211,5 +212,13 @@ footer a {
         left: 3px;
         margin: 2em 0 5em;
         width: 80%;
+    }
+}
+
+
+@media (max-width: 375px){
+    .btn {
+        width: 100%;
+        margin: .5em 0;
     }
 }
