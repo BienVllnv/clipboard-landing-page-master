@@ -37,7 +37,7 @@ p {
 /* Header Section */
 
 header .logo {
-    margin-bottom: 3em;
+    margin: 4em 0;
 }
 
 .content {
@@ -110,10 +110,10 @@ aside img {
 }
 
 .cards {
-    max-width: 310px;
+    max-width: 320px;
 }
 
-.flex-container .icons {
+.grid-container .icons {
     height: 40px;
     margin: 2em auto;
 }
@@ -143,8 +143,7 @@ footer {
 
 footer .footer-list {
     display: grid;
-    grid-auto-columns: (3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
     grid-auto-flow: column;
     justify-items: start;
     row-gap: 10px;
@@ -187,4 +186,30 @@ footer a {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 700px){
+    
+    .side-bar {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .side-content {
+        justify-self: center;
+        margin: 2em 0;
+        width: fit-content;
+        max-width: 90%;
+    }
+
+    aside img {
+        align-self: center;
+        position: relative;
+        left: 3px;
+        margin: 2em 0 5em;
+        width: 80%;
+    }
 }
